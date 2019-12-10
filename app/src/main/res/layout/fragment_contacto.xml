@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.nuevo_contacto_fragment.ContactoFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/nombre_edit_contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/nombre_contacto_label"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/telefono_edit_contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/telefono_contacto_label"
+            android:inputType="number"
+            android:maxLength="7"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/cumple_edit_contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/cumple_contacto_label"
+            android:inputType="date"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/nota_edit_contact"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/nota_contacto_label"
+            android:inputType="text"
+            android:maxLines="3"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_guardar_cambios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"/>
+
+
+</LinearLayout>

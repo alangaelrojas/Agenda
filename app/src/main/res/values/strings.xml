@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Agenda</string>
+
+    <string name="add_contacto">Nuevo contacto</string>
+    <string name="contactos">Contactos</string>
+    <string name="nombre_contacto_label">Nombre</string>
+    <string name="telefono_contacto_label">Teléfono</string>
+    <string name="cumple_contacto_label">Cumpleaños</string>
+    <string name="nota_contacto_label">Nota</string>
+    <string name="preguntar_eliminar">¿Desea eliminar este contacto?</string>
+    <string name="eliminar">Eliminar</string>
+</resources>

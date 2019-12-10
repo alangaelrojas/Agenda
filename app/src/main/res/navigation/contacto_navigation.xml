@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contacto_navigation"
+    app:startDestination="@id/listAgendaFragment">
+    <fragment
+        android:id="@+id/listAgendaFragment"
+        android:name="com.apps.alan.agenda.ui.lista_fragment.ListAgendaFragment"
+        android:label="@string/contactos"
+        tools:layout="@layout/fragment_list_agenda" >
+        <action
+            android:id="@+id/action_listAgendaFragment_to_contactoFragment"
+            app:destination="@id/contactoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactoFragment"
+        android:name="com.apps.alan.agenda.ui.nuevo_contacto_fragment.ContactoFragment"
+        android:label="@string/add_contacto">
+        <action
+            android:id="@+id/action_contactoFragment_to_listAgendaFragment"
+            app:destination="@id/listAgendaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>
