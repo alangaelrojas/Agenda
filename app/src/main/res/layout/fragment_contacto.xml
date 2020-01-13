@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.nuevo_contacto_fragment.ContactoFragment">
+    tools:context=".presentation.ui.nuevo_contacto_fragment.ContactoFragment">
 
 
     <com.google.android.material.textfield.TextInputLayout

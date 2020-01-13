@@ -2,7 +2,7 @@ package com.apps.alan.agenda.repository
 
 import android.app.Application
 import androidx.lifecycle.LiveData
-import com.apps.alan.agenda.db.Contacto
+import com.mavi.core.data.Contacto
 import com.apps.alan.agenda.db.ContactoDAO
 import com.apps.alan.agenda.db.database
 import org.jetbrains.anko.doAsync

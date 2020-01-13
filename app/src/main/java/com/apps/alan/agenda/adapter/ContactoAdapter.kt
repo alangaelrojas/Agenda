@@ -4,16 +4,15 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.cardview.widget.CardView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.apps.alan.agenda.R
-import com.apps.alan.agenda.db.Contacto
-import com.apps.alan.agenda.ui.lista_fragment.ListAgendaFragmentDirections
-import com.apps.alan.agenda.ui.lista_fragment.ListContactosViewModel
+import com.mavi.core.data.Contacto
+import com.apps.alan.agenda.presentation.ui.lista_fragment.ListAgendaFragmentDirections
+import com.apps.alan.agenda.presentation.ui.lista_fragment.ListContactosViewModel
 
 
 class ContactoAdapter(private val viewModel: ListContactosViewModel, c:Context) : RecyclerView.Adapter<ContactoAdapter.HolderContacto>() {

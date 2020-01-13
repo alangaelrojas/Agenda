@@ -6,7 +6,7 @@
     app:startDestination="@id/listAgendaFragment">
     <fragment
         android:id="@+id/listAgendaFragment"
-        android:name="com.apps.alan.agenda.ui.lista_fragment.ListAgendaFragment"
+        android:name="com.apps.alan.agenda.presentation.ui.lista_fragment.ListAgendaFragment"
         android:label="@string/contactos"
         tools:layout="@layout/fragment_list_agenda" >
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/contactoFragment"
-        android:name="com.apps.alan.agenda.ui.nuevo_contacto_fragment.ContactoFragment"
+        android:name="com.apps.alan.agenda.presentation.ui.nuevo_contacto_fragment.ContactoFragment"
         android:label="@string/add_contacto">
         <action
             android:id="@+id/action_contactoFragment_to_listAgendaFragment"

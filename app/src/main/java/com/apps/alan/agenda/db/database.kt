@@ -5,6 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.apps.alan.agenda.utils.Constants
+import com.mavi.core.data.Contacto
 
 @Database(entities = arrayOf(Contacto::class), version = 1, exportSchema = false)
 abstract class database : RoomDatabase() {

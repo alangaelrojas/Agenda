@@ -1,4 +1,4 @@
-package com.apps.alan.agenda.ui.nuevo_contacto_fragment
+package com.apps.alan.agenda.presentation.ui.nuevo_contacto_fragment
 
 
 import android.os.Bundle
@@ -10,11 +10,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 
 import com.apps.alan.agenda.R
-import com.apps.alan.agenda.db.Contacto
+import com.mavi.core.data.Contacto
 import kotlinx.android.synthetic.main.fragment_contacto.*
 
 class ContactoFragment : Fragment() {
@@ -79,7 +78,12 @@ class ContactoFragment : Fragment() {
         if(!TextUtils.isEmpty(nombre_edit_contact.text.toString()) && !TextUtils.isEmpty(telefono_edit_contact.text.toString())
             && !TextUtils.isEmpty(cumple_edit_contact.text.toString())) {
 
-            val contacto = Contacto(nombre_edit_contact.text.toString(), telefono_edit_contact.text.toString().toInt(), cumple_edit_contact.text.toString(), nota_edit_contact.text.toString())
+            val contacto = Contacto(
+                nombre_edit_contact.text.toString(),
+                telefono_edit_contact.text.toString().toInt(),
+                cumple_edit_contact.text.toString(),
+                nota_edit_contact.text.toString()
+            )
             try{
                 viewModel.insertContacto(contacto)
                 Toast.makeText(context!!.applicationContext, "Guardado", Toast.LENGTH_SHORT).show()
@@ -93,7 +97,12 @@ class ContactoFragment : Fragment() {
         if(!TextUtils.isEmpty(nombre_edit_contact.text.toString()) && !TextUtils.isEmpty(telefono_edit_contact.text.toString())
             && !TextUtils.isEmpty(cumple_edit_contact.text.toString())){
 
-            val contacto = Contacto(nombre_edit_contact.text.toString(), telefono_edit_contact.text.toString().toInt(), cumple_edit_contact.text.toString(), nota_edit_contact.text.toString())
+            val contacto = Contacto(
+                nombre_edit_contact.text.toString(),
+                telefono_edit_contact.text.toString().toInt(),
+                cumple_edit_contact.text.toString(),
+                nota_edit_contact.text.toString()
+            )
 
             try{
                 viewModel.updateContacto(contacto, idContacto)

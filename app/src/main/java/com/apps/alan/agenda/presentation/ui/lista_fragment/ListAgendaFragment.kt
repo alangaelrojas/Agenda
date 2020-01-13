@@ -1,4 +1,4 @@
-package com.apps.alan.agenda.ui.lista_fragment
+package com.apps.alan.agenda.presentation.ui.lista_fragment
 
 
 import android.os.Bundle

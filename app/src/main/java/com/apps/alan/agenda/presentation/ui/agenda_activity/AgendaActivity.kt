@@ -1,4 +1,4 @@
-package com.apps.alan.agenda.ui.agenda_activity
+package com.apps.alan.agenda.presentation.ui.agenda_activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,9 +6,6 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.apps.alan.agenda.R
-import com.apps.alan.agenda.ui.lista_fragment.ListAgendaFragment
-import com.apps.alan.agenda.ui.lista_fragment.ListAgendaFragmentDirections
-import kotlinx.android.synthetic.main.activity_main.*
 
 class AgendaActivity : AppCompatActivity() {
 

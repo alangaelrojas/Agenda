@@ -1,9 +1,9 @@
-package com.apps.alan.agenda.ui.lista_fragment
+package com.apps.alan.agenda.presentation.ui.lista_fragment
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import com.apps.alan.agenda.db.Contacto
+import com.mavi.core.data.Contacto
 import com.apps.alan.agenda.repository.DatabaseRepository
 
 class ListContactosViewModel constructor(application: Application) : AndroidViewModel(application) {
